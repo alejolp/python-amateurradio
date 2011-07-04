@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from distutils.core import setup, Extension
 
 amateurradio_mod = Extension('amateurradio',
-    libraries = ['ax25'],
+    libraries = ['ax25', 'ax25io'],
     sources = ['src/amateurradio.c'])
 
 setup(name = "python-amateurradio",
